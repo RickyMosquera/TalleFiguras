@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="taller1.FXMLDocumentController">
+   <children>
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#crearCuadrado" text="Crear cuadrado" />
+                  <MenuItem mnemonicParsing="false" onAction="#crearCirculo" text="Crear circulo" />
+                  <MenuItem mnemonicParsing="false" onAction="#crearTrriangulo" text="Crear Triangulo" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#Limpiar" text="Limpiar Lienzo" />
+                  <MenuItem mnemonicParsing="false" onAction="#CambiarColor" text="Cambiar colores" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Canvas fx:id="Lienzo" height="316.0" layoutY="119.0" onMouseMoved="#Mouse" width="489.0" />
+      <Label fx:id="ptoX" layoutX="217.0" layoutY="39.0" text="Punto X">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="ptoY" layoutX="217.0" layoutY="71.0" text="Punto Y">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Circle fx:id="Circle" fill="DODGERBLUE" layoutX="248.0" layoutY="375.0" radius="46.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
