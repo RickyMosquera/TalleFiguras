@@ -57,7 +57,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void crearTrriangulo(ActionEvent event) {
         
-  double x[] = {145, 25, 265};
+    double x[] = {145, 25, 265};
     double y[] = {25, 145, 145};    
 
     g.fillPolygon(x, y, 3);
